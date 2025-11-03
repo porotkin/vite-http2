@@ -5,5 +5,15 @@
 3. Open in Chrome (must be `https://`)
 4. Try to reload (important: browser cache must be enabled!)
 
-ER: Normal reload, all modules are loaded
-AR: Intermittent `net::ERR_HTTP2_PROTOCOL_ERROR`
+> In `vite.config.js` plugin parameters can be changed. 
+
+**Default**: 
+```json
+{
+    "totalFiles": 3000,
+    "fileCharacters": 50000
+}
+```
+
+* **ER**: Normal reload, all modules are loaded
+* **AR**: Intermittent `net::ERR_HTTP2_PROTOCOL_ERROR`
