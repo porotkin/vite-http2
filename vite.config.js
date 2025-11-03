@@ -64,5 +64,11 @@ export default defineConfig({
     ],
     server: {
       https: true,
+      // WA for the issue from Vite
+      //  https://github.com/vitejs/vite/pull/21024
+      // {
+      //     streamResetBurst: 100000,
+      //     streamResetRate: 33,
+      // },
     },
 })
