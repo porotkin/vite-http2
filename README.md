@@ -6,6 +6,9 @@
 4. Try to reload (important: browser cache must be enabled!)
 
 > In `vite.config.js` plugin parameters can be changed. 
+> I could reproduce with 1000 and 500 too, but less often.
+> Also, it rarely occurs in incognito mode.
+> But Firefox handles it fine (as well as Safari, but Safari falls back to http/1.1)
 
 **Default**: 
 ```json
